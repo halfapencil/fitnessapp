@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let exercises = ["Bench press", "Chest Fly", "Tricep Extention",""]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+        VStack{
+            List {
+                ForEach(exercises, id:\.self){
+                    exercise in Text(exercise)
+                }
+            }
         }
-        .padding()
+        TabView{
+            HistoryView().tabItem { Label("History",systemImage: "person.3") }
+            SettingsView().tabItem { Label("Settings", systemImage: ) }
+        }
+    
+        }
     }
-}
 
 #Preview {
     ContentView()
