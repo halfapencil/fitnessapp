@@ -9,15 +9,27 @@ import Foundation
 struct WorkoutGenerator{
     static func generate(from muscles: Set<MuscleGroup>, library:[Exercise]) -> Workout{
         var entries: [WorkoutEntry] = []
-        if muscles.contains(.chest){
-            let chestExercises = library.filter{$0.primaryMuscle.contains("chest")}
-            if let first = chestExercises.first{
-                entries.append(
-                    WorkoutEntry(exerciseId: first.id, exerciseName: first.name, sets: defaultSets())
-                )
+        var usedFamilies = Set<String>()
+        
+        let orderedMuscles = muscles.sorted{$0.priority < $1.priority}
+        
+        for muscle in orderedMuscles {
+            var candidate = library.filter{$0.primaryMuscle.contains(muscle.rawValue)}
+            
+            candidate.shuffle()
+            var added = 0
+            
+            
+            for exercise in candidate{
+                if usedFamilies.contains(exercise.family){
+                    continue
+                }
+                usedFamilies.insert(exercise.family)
+                entries.append(WorkoutEntry(exerciseId: exercise.id, exerciseName: exercise.name, sets: defaultSets()))
+                added += 1
+                if added == 2 {break}
             }
         }
-        
         return Workout(entries:entries)
     }
     static func defaultSets() -> [WorkoutSet]{

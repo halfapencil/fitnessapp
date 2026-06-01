@@ -14,6 +14,7 @@ struct Exercise:Codable, Identifiable{
     let secondaryMuscle:[String]
     let category:[String]
     let equipment:String
+    let family:String
 }
 
 final class ExerciseStore: ObservableObject{

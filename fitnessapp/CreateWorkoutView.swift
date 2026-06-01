@@ -7,14 +7,27 @@
 import SwiftUI
 
 enum MuscleGroup: String,CaseIterable, Hashable{
-    case chest,back,legs,bicep,tricep,shoulders
+    case chest,back,legs,bicep,tricep,shoulders,abs,oblique
 }
 extension MuscleGroup {
 
     var title: String {
         rawValue.capitalized
     }
-
+    var priority:Int{
+        switch self{
+        case .chest: return 0
+        case .back: return 0
+        case .shoulders: return 0
+        case .legs: return 0
+            
+        case .bicep: return 1
+        case .tricep: return 1
+            
+        case .abs: return 2
+        case .oblique: return 2
+        }
+    }
     var icon: String {
         switch self {
         case .chest: return "figure.strengthtraining.traditional"
@@ -23,6 +36,8 @@ extension MuscleGroup {
         case .bicep: return "dumbbell"
         case .tricep: return "dumbbell"
         case .shoulders: return "figure.arms.open"
+        case .abs: return "figure.core.training"
+        case .oblique: return "figure.core.training"
         }
     }
 }

@@ -1,155 +1,173 @@
 [
-    {
-        "id": 1,
-        "name": "Bench Press",
-        "primaryMuscle": "chest",
-        "secondaryMuscle": ["tricep", "shoulders"],
-        "equipment": "barbell",
-        "category": ["strength", "compound"]
-    },
-    {
-        "id": 2,
-        "name": "Pull ups (Wide Grip)",
-        "primaryMuscle": "upper back",
-        "secondaryMuscle": ["bicep"],
-        "equipment": "bodyweight",
-        "category": ["strength", "calesthenic"]
-    },
-    {
-        "id": 3,
-        "name": "Bicep Curl (Dumbbell)",
-        "primaryMuscle": "bicep",
-        "secondaryMuscle": [],
-        "equipment": "barbell",
-        "category": ["strength", "hypertrophy"]
-    },
-    {
-        "id": 4,
-        "name": "Bicep Curl (Barbell)",
-        "primaryMuscle": "bicep",
-        "secondaryMuscle": [],
-        "equipment": "barbell",
-        "category": []
-    },
-    {
-        "id": 5,
-        "name": "Squat",
-        "primaryMuscle": "quad",
-        "secondaryMuscle": ["hamstring"],
-        "equipment": "barbell",
-        "category": ["strength", "hypertrophy", "compound"]
-    },
-    {
-        "id": 6,
-        "name": "Stationary biking",
-        "primaryMuscle": "quad",
-        "secondaryMuscle": ["hamstring"],
-        "equipment": "stationary bike",
-        "category": ["cardio"]
-    },
-    {
-        "id": 7,
-        "name": "Stair Climbing",
-        "primaryMuscle": "quad",
-        "secondaryMuscle": ["hamstring"],
-        "equipment": "stairmaster",
-        "category": ["cardio"]
-    },
-    {
-        "id": 8,
-        "name": "Decline Situp",
-        "primaryMuscle": "abs",
-        "secondaryMuscle": ["oblique"],
-        "equipment": "decline bench",
-        "category": ["strength", "hypertrophy"]
-    },
-    {
-        "id": 9,
-        "name": "Bulgarian Split Squat (Dumbbell)",
-        "primaryMuscle": "quad",
-        "secondaryMuscle": ["hamstring"],
-        "equipment": "dumbbell",
-        "category": ["strength", "hypertrophy"]
-    },
-    {
-        "id": 10,
-        "name": "Deadlift",
-        "primaryMuscle": "back",
-        "secondaryMuscle": ["bicep", "hamstring"],
-        "equipment": "barbell",
-        "category": ["strength", "compound"]
-    },
-    {
-        "id": 11,
-        "name": "Shoulder Press (Dumbbell)",
-        "primaryMuscle": "shoulders",
-        "secondaryMuscle": ["tricep"],
-        "equipment": "dumbbell",
-        "category": ["strength", "hypertrophy"]
-    },
-    {
-        "id": 12,
-        "name": "Shoulder Press (Barbell)",
-        "primaryMuscle": "shoulders",
-        "secondaryMuscle": ["tricep", "upper chest"],
-        "equipment": "barbell",
-        "category": ["compound", "strength"]
-    },
-    
-    {
-        "id": 13,
-        "name": "Iso row",
-        "primaryMuscle": "middle back",
-        "secondaryMuscle": ["lats","upper back"],
-        "equipment": "machine",
-        "category": ["hypertrophy","strength"]
-    },
-    {
-        "id": 14,
-        "name": "V Grip Cable Row",
-        "primaryMuscle": "back",
-        "secondaryMuscle": ["bicep"],
-        "equipment": "cable",
-        "category": ["hypertrophy","strength"]
-    },
-    {
-        "id": 15,
-        "name": "Lat Pulldown (Seated)",
-        "primaryMuscle": "lats",
-        "secondaryMuscle": ["upper back","lower back"],
-        "equipment": "cable",
-        "category": ["strength","hypertrophy"]
-    },
-    {
-        "id": 16,
-        "name": "Lateral Raise (dumbbell)",
-        "primaryMuscle": "side delt",
-        "secondaryMuscle": [],
-        "equipment": "dumbbell",
-        "category": ["strength","hypertrophy"]
-    },
-    {
-        "id": 17,
-        "name": "Chest Fly (Machine)",
-        "primaryMuscle": "mid chest",
-        "secondaryMuscle": [],
-        "equipment": "machine",
-        "category": ["hypertrophy","strength"]
-    },
-    {
-        "id": 18,
-        "name": "Tricep Rope Pushdown",
-        "primaryMuscle": "tricep",
-        "secondaryMuscle": ["rear delt"],
-        "equipment": "cable",
-        "category": ["hypertrophy","strength"]
-    },
-    {
-        "id": 19,
-        "name": "Overhead Tricep Extension",
-        "primaryMuscle": "tricep",
-        "secondaryMuscle": [],
-        "equipment": "cable",
-        "category": ["hypertrophy","strength"]
-    },
+  {
+    "id": 1,
+    "name": "Bench Press",
+    "primaryMuscle": "chest",
+    "secondaryMuscle": ["tricep", "shoulders"],
+    "equipment": "barbell",
+    "category": ["strength", "compound"],
+    "family": "bench_press"
+  },
+  {
+    "id": 2,
+    "name": "Pull ups (Wide Grip)",
+    "primaryMuscle": "upper back",
+    "secondaryMuscle": ["bicep"],
+    "equipment": "bodyweight",
+    "category": ["strength", "calisthenic"],
+    "family": "pull_up"
+  },
+  {
+    "id": 3,
+    "name": "Bicep Curl (Dumbbell)",
+    "primaryMuscle": "bicep",
+    "secondaryMuscle": [],
+    "equipment": "dumbbell",
+    "category": ["strength", "hypertrophy"],
+    "family": "bicep_curl"
+  },
+  {
+    "id": 4,
+    "name": "Bicep Curl (Barbell)",
+    "primaryMuscle": "bicep",
+    "secondaryMuscle": [],
+    "equipment": "barbell",
+    "category": ["strength", "hypertrophy"],
+    "family": "bicep_curl"
+  },
+  {
+    "id": 5,
+    "name": "Squat",
+    "primaryMuscle": "quad",
+    "secondaryMuscle": ["hamstring"],
+    "equipment": "barbell",
+    "category": ["strength", "hypertrophy", "compound"],
+    "family": "squat"
+  },
+  {
+    "id": 6,
+    "name": "Stationary biking",
+    "primaryMuscle": "quad",
+    "secondaryMuscle": ["hamstring"],
+    "equipment": "stationary bike",
+    "category": ["cardio"],
+    "family": "cardio"
+  },
+  {
+    "id": 7,
+    "name": "Stair Climbing",
+    "primaryMuscle": "quad",
+    "secondaryMuscle": ["hamstring"],
+    "equipment": "stairmaster",
+    "category": ["cardio"],
+    "family": "cardio"
+  },
+  {
+    "id": 8,
+    "name": "Decline Situp",
+    "primaryMuscle": "abs",
+    "secondaryMuscle": ["oblique"],
+    "equipment": "decline bench",
+    "category": ["strength", "hypertrophy"],
+    "family": "decline_situp"
+  },
+  {
+    "id": 9,
+    "name": "Bulgarian Split Squat (Dumbbell)",
+    "primaryMuscle": "quad",
+    "secondaryMuscle": ["hamstring"],
+    "equipment": "dumbbell",
+    "category": ["strength", "hypertrophy"],
+    "family": "bulgarian_split_squat"
+  },
+  {
+    "id": 10,
+    "name": "Deadlift",
+    "primaryMuscle": "back",
+    "secondaryMuscle": ["bicep", "hamstring"],
+    "equipment": "barbell",
+    "category": ["strength", "compound"],
+    "family": "deadlift"
+  },
+  {
+    "id": 11,
+    "name": "Shoulder Press (Dumbbell)",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscle": ["tricep"],
+    "equipment": "dumbbell",
+    "category": ["strength", "hypertrophy"],
+    "family": "shoulder_press"
+  },
+  {
+    "id": 12,
+    "name": "Shoulder Press (Barbell)",
+    "primaryMuscle": "shoulders",
+    "secondaryMuscle": ["tricep", "upper chest"],
+    "equipment": "barbell",
+    "category": ["compound", "strength"],
+    "family": "shoulder_press"
+  },
+  {
+    "id": 13,
+    "name": "Iso row",
+    "primaryMuscle": "middle back",
+    "secondaryMuscle": ["lats", "upper back"],
+    "equipment": "machine",
+    "category": ["hypertrophy", "strength"],
+    "family": "iso_row"
+  },
+  {
+    "id": 14,
+    "name": "V Grip Cable Row",
+    "primaryMuscle": "back",
+    "secondaryMuscle": ["bicep"],
+    "equipment": "cable",
+    "category": ["hypertrophy", "strength"],
+    "family": "cable_row"
+  },
+  {
+    "id": 15,
+    "name": "Lat Pulldown (Seated)",
+    "primaryMuscle": "lats",
+    "secondaryMuscle": ["upper back", "lower back"],
+    "equipment": "cable",
+    "category": ["strength", "hypertrophy"],
+    "family": "lat_pulldown"
+  },
+  {
+    "id": 16,
+    "name": "Lateral Raise (dumbbell)",
+    "primaryMuscle": "side delt",
+    "secondaryMuscle": [],
+    "equipment": "dumbbell",
+    "category": ["strength", "hypertrophy"],
+    "family": "lateral_raise"
+  },
+  {
+    "id": 17,
+    "name": "Chest Fly (Machine)",
+    "primaryMuscle": "mid chest",
+    "secondaryMuscle": [],
+    "equipment": "machine",
+    "category": ["hypertrophy", "strength"],
+    "family": "chest_fly"
+  },
+  {
+    "id": 18,
+    "name": "Tricep Rope Pushdown",
+    "primaryMuscle": "tricep",
+    "secondaryMuscle": ["rear delt"],
+    "equipment": "cable",
+    "category": ["hypertrophy", "strength"],
+    "family": "tricep_pushdown"
+  },
+  {
+    "id": 19,
+    "name": "Overhead Tricep Extension",
+    "primaryMuscle": "tricep",
+    "secondaryMuscle": [],
+    "equipment": "cable",
+    "category": ["hypertrophy", "strength"],
+    "family": "overhead_tricep_extension"
+  }
 ]
