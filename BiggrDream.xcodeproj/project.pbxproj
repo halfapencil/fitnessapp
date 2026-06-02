@@ -16,7 +16,8 @@
 		EA6979932FCCEED1009D3465 /* WorkoutGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69798F2FCCE1E2009D3465 /* WorkoutGenerator.swift */; };
 		EA6979942FCCF176009D3465 /* ExerciseLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6979812FCCB709009D3465 /* ExerciseLibrary.json */; };
 		EA6979982FCD0C5A009D3465 /* MuscleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6979972FCD0C57009D3465 /* MuscleSelectionView.swift */; };
-		EA8A75092FC7BF33008E7AE1 /* fitnessappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A75082FC7BF33008E7AE1 /* fitnessappApp.swift */; };
+		EA76E77C2FCE251100FC9F9F /* CardioEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76E77B2FCE250C00FC9F9F /* CardioEntry.swift */; };
+		EA8A75092FC7BF33008E7AE1 /* BiggrDreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A75082FC7BF33008E7AE1 /* BiggrDreamApp.swift */; };
 		EA8A750D2FC7BF35008E7AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8A750C2FC7BF35008E7AE1 /* Assets.xcassets */; };
 		EA8A75102FC7BF35008E7AE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8A750F2FC7BF35008E7AE1 /* Preview Assets.xcassets */; };
 		EA8A751D2FCAC20D008E7AE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A750A2FC7BF33008E7AE1 /* ContentView.swift */; };
@@ -32,8 +33,9 @@
 		EA69798F2FCCE1E2009D3465 /* WorkoutGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutGenerator.swift; sourceTree = "<group>"; };
 		EA6979902FCCECF6009D3465 /* ExerciseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseStore.swift; sourceTree = "<group>"; };
 		EA6979972FCD0C57009D3465 /* MuscleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleSelectionView.swift; sourceTree = "<group>"; };
-		EA8A75052FC7BF33008E7AE1 /* fitnessapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnessapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA8A75082FC7BF33008E7AE1 /* fitnessappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnessappApp.swift; sourceTree = "<group>"; };
+		EA76E77B2FCE250C00FC9F9F /* CardioEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioEntry.swift; sourceTree = "<group>"; };
+		EA8A75052FC7BF33008E7AE1 /* BiggrDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiggrDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8A75082FC7BF33008E7AE1 /* BiggrDreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggrDreamApp.swift; sourceTree = "<group>"; };
 		EA8A750A2FC7BF33008E7AE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA8A750C2FC7BF35008E7AE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8A750F2FC7BF35008E7AE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -70,7 +72,7 @@
 		EA8A74FC2FC7BF33008E7AE1 = {
 			isa = PBXGroup;
 			children = (
-				EA8A75072FC7BF33008E7AE1 /* fitnessapp */,
+				EA8A75072FC7BF33008E7AE1 /* BiggrDream */,
 				EA8A75062FC7BF33008E7AE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,12 +80,12 @@
 		EA8A75062FC7BF33008E7AE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA8A75052FC7BF33008E7AE1 /* fitnessapp.app */,
+				EA8A75052FC7BF33008E7AE1 /* BiggrDream.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA8A75072FC7BF33008E7AE1 /* fitnessapp */ = {
+		EA8A75072FC7BF33008E7AE1 /* BiggrDream */ = {
 			isa = PBXGroup;
 			children = (
 				EA6979972FCD0C57009D3465 /* MuscleSelectionView.swift */,
@@ -93,11 +95,11 @@
 				EA6979882FCCD4CA009D3465 /* WorkoutsView.swift */,
 				EA8A750A2FC7BF33008E7AE1 /* ContentView.swift */,
 				EA8A75192FCAC0D6008E7AE1 /* Models */,
-				EA8A75082FC7BF33008E7AE1 /* fitnessappApp.swift */,
+				EA8A75082FC7BF33008E7AE1 /* BiggrDreamApp.swift */,
 				EA8A750C2FC7BF35008E7AE1 /* Assets.xcassets */,
 				EA8A750E2FC7BF35008E7AE1 /* Preview Content */,
 			);
-			path = fitnessapp;
+			path = BiggrDream;
 			sourceTree = "<group>";
 		};
 		EA8A750E2FC7BF35008E7AE1 /* Preview Content */ = {
@@ -111,6 +113,7 @@
 		EA8A75192FCAC0D6008E7AE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA76E77B2FCE250C00FC9F9F /* CardioEntry.swift */,
 				EA69798C2FCCE138009D3465 /* WorkoutSet.swift */,
 				EA69797E2FCCB56C009D3465 /* WorkoutEntry.swift */,
 				EA69797C2FCCB548009D3465 /* Workout.swift */,
@@ -121,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA8A75042FC7BF33008E7AE1 /* fitnessapp */ = {
+		EA8A75042FC7BF33008E7AE1 /* BiggrDream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA8A75132FC7BF35008E7AE1 /* Build configuration list for PBXNativeTarget "fitnessapp" */;
+			buildConfigurationList = EA8A75132FC7BF35008E7AE1 /* Build configuration list for PBXNativeTarget "BiggrDream" */;
 			buildPhases = (
 				EA8A75012FC7BF33008E7AE1 /* Sources */,
 				EA8A75022FC7BF33008E7AE1 /* Frameworks */,
@@ -133,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = fitnessapp;
+			name = BiggrDream;
 			productName = fitnessapp;
-			productReference = EA8A75052FC7BF33008E7AE1 /* fitnessapp.app */;
+			productReference = EA8A75052FC7BF33008E7AE1 /* BiggrDream.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA8A75002FC7BF33008E7AE1 /* Build configuration list for PBXProject "fitnessapp" */;
+			buildConfigurationList = EA8A75002FC7BF33008E7AE1 /* Build configuration list for PBXProject "BiggrDream" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA8A75042FC7BF33008E7AE1 /* fitnessapp */,
+				EA8A75042FC7BF33008E7AE1 /* BiggrDream */,
 			);
 		};
 /* End PBXProject section */
@@ -194,8 +197,9 @@
 				EA8A751D2FCAC20D008E7AE1 /* ContentView.swift in Sources */,
 				EA69798D2FCCE13C009D3465 /* WorkoutSet.swift in Sources */,
 				EA6979912FCCEE8D009D3465 /* ExerciseStore.swift in Sources */,
+				EA76E77C2FCE251100FC9F9F /* CardioEntry.swift in Sources */,
 				EA6979892FCCD4CD009D3465 /* WorkoutsView.swift in Sources */,
-				EA8A75092FC7BF33008E7AE1 /* fitnessappApp.swift in Sources */,
+				EA8A75092FC7BF33008E7AE1 /* BiggrDreamApp.swift in Sources */,
 				EA69797D2FCCB569009D3465 /* Workout.swift in Sources */,
 				EA6979932FCCEED1009D3465 /* WorkoutGenerator.swift in Sources */,
 				EA69797F2FCCB56F009D3465 /* WorkoutEntry.swift in Sources */,
@@ -385,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA8A75002FC7BF33008E7AE1 /* Build configuration list for PBXProject "fitnessapp" */ = {
+		EA8A75002FC7BF33008E7AE1 /* Build configuration list for PBXProject "BiggrDream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA8A75112FC7BF35008E7AE1 /* Debug */,
@@ -394,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA8A75132FC7BF35008E7AE1 /* Build configuration list for PBXNativeTarget "fitnessapp" */ = {
+		EA8A75132FC7BF35008E7AE1 /* Build configuration list for PBXNativeTarget "BiggrDream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA8A75142FC7BF35008E7AE1 /* Debug */,

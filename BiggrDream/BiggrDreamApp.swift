@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct fitnessappApp: App {
+struct BiggrDreamApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

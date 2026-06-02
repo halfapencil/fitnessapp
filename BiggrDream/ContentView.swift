@@ -8,11 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    let exercises = [
-        "Bench Press",
-        "Chest Fly",
-        "Tricep Extension"
-    ]
     var body: some View {
         WorkoutsView()
     }

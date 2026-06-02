@@ -15,19 +15,26 @@ struct WorkoutGenerator{
         
         for muscle in orderedMuscles {
             var candidate = library.filter{$0.primaryMuscle.contains(muscle.rawValue)}
-            
             candidate.shuffle()
+            let compounds = candidate.filter{$0.category.contains("compound")}.shuffled()
+            let isolations = candidate.filter{!$0.category.contains("compound")}.shuffled()
+            
             var added = 0
+            if let compoundExercise = compounds.first, !usedFamilies.contains(compoundExercise.family){
+                entries.append(WorkoutEntry(exerciseId: compoundExercise.id, exerciseName: compoundExercise.name, sets: defaultSets()))
+                
+                usedFamilies.insert(compoundExercise.family)
+                added+=1
+            }
             
-            
-            for exercise in candidate{
+            for exercise in isolations{
+                if added == 2 {break}
                 if usedFamilies.contains(exercise.family){
                     continue
                 }
                 usedFamilies.insert(exercise.family)
                 entries.append(WorkoutEntry(exerciseId: exercise.id, exerciseName: exercise.name, sets: defaultSets()))
                 added += 1
-                if added == 2 {break}
             }
         }
         return Workout(entries:entries)
