@@ -17,6 +17,7 @@
 		EA6979942FCCF176009D3465 /* ExerciseLibrary.json in Resources */ = {isa = PBXBuildFile; fileRef = EA6979812FCCB709009D3465 /* ExerciseLibrary.json */; };
 		EA6979982FCD0C5A009D3465 /* MuscleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6979972FCD0C57009D3465 /* MuscleSelectionView.swift */; };
 		EA76E77C2FCE251100FC9F9F /* CardioEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76E77B2FCE250C00FC9F9F /* CardioEntry.swift */; };
+		EA76E77E2FCF7DE100FC9F9F /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA76E77D2FCF7DDC00FC9F9F /* WorkoutDetailView.swift */; };
 		EA8A75092FC7BF33008E7AE1 /* BiggrDreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8A75082FC7BF33008E7AE1 /* BiggrDreamApp.swift */; };
 		EA8A750D2FC7BF35008E7AE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8A750C2FC7BF35008E7AE1 /* Assets.xcassets */; };
 		EA8A75102FC7BF35008E7AE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8A750F2FC7BF35008E7AE1 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		EA6979902FCCECF6009D3465 /* ExerciseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseStore.swift; sourceTree = "<group>"; };
 		EA6979972FCD0C57009D3465 /* MuscleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleSelectionView.swift; sourceTree = "<group>"; };
 		EA76E77B2FCE250C00FC9F9F /* CardioEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioEntry.swift; sourceTree = "<group>"; };
+		EA76E77D2FCF7DDC00FC9F9F /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 		EA8A75052FC7BF33008E7AE1 /* BiggrDream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiggrDream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8A75082FC7BF33008E7AE1 /* BiggrDreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiggrDreamApp.swift; sourceTree = "<group>"; };
 		EA8A750A2FC7BF33008E7AE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		EA8A75072FC7BF33008E7AE1 /* BiggrDream */ = {
 			isa = PBXGroup;
 			children = (
+				EA76E77D2FCF7DDC00FC9F9F /* WorkoutDetailView.swift */,
 				EA6979972FCD0C57009D3465 /* MuscleSelectionView.swift */,
 				EA6979802FCCB701009D3465 /* JSON */,
 				EA69798E2FCCE1DD009D3465 /* Services */,
@@ -195,6 +198,7 @@
 				EA6979982FCD0C5A009D3465 /* MuscleSelectionView.swift in Sources */,
 				EA69798B2FCCD5B1009D3465 /* CreateWorkoutView.swift in Sources */,
 				EA8A751D2FCAC20D008E7AE1 /* ContentView.swift in Sources */,
+				EA76E77E2FCF7DE100FC9F9F /* WorkoutDetailView.swift in Sources */,
 				EA69798D2FCCE13C009D3465 /* WorkoutSet.swift in Sources */,
 				EA6979912FCCEE8D009D3465 /* ExerciseStore.swift in Sources */,
 				EA76E77C2FCE251100FC9F9F /* CardioEntry.swift in Sources */,
@@ -335,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"fitnessapp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BiggrDream/Preview_Content\"";
 				DEVELOPMENT_TEAM = Y33V7F4398;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -349,7 +353,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Tony.fitnessapp;
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.BiggrDream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"fitnessapp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BiggrDream/Preview_Content\"";
 				DEVELOPMENT_TEAM = Y33V7F4398;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -378,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Tony.fitnessapp;
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.BiggrDream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -53,7 +53,8 @@ extension MuscleGroup {
     }
 }
 struct CreateWorkoutView: View {
-
+    @State private var generatedWorkout: Workout?
+    
     @StateObject private var store = ExerciseStore()
 
     @State private var selected = Set<MuscleGroup>()
@@ -62,17 +63,19 @@ struct CreateWorkoutView: View {
         VStack {
 
             Text("Select Muscle Groups")
+
             MuscleSelectionView(selected: $selected)
+
             Button("Generate Workout") {
-                let workout = WorkoutGenerator.generate(
+                generatedWorkout = WorkoutGenerator.generate(
                     from: selected,
                     library: store.exercises
                 )
-
-                print(workout)
             }
-            .buttonStyle(.borderedProminent)
-            .padding()
+
+        }
+        .navigationDestination(item: $generatedWorkout) {
+            WorkoutDetailView(workout: $0)
         }
         .onAppear {
             store.load()

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct WorkoutEntry:Identifiable{
+struct WorkoutEntry:Identifiable, Hashable{
     let id:UUID
     var exerciseId:Int
     var exerciseName: String
