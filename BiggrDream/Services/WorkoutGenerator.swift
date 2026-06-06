@@ -16,8 +16,9 @@ struct WorkoutGenerator{
         for muscle in orderedMuscles {
             var candidate = library.filter{$0.primaryMuscle.contains(muscle.rawValue)}
             candidate.shuffle()
-            let compounds = candidate.filter{$0.category.contains("compound")}.shuffled()
-            let isolations = candidate.filter{!$0.category.contains("compound")}.shuffled()
+            let notCardio = candidate.filter{!$0.category.contains("cardio")}.shuffled()
+            let compounds = notCardio.filter{$0.category.contains("compound")}.shuffled()
+            let isolations = notCardio.filter{!$0.category.contains("compound")}.shuffled()
             
             var added = 0
             if let compoundExercise = compounds.first, !usedFamilies.contains(compoundExercise.family){
@@ -37,7 +38,7 @@ struct WorkoutGenerator{
                 added += 1
             }
         }
-        return Workout(entries:entries)
+        return Workout(entries:entries, muscleGroup: Array(muscles))
     }
     static func defaultSets() -> [WorkoutSet]{
         [

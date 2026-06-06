@@ -9,11 +9,13 @@ struct Workout:Identifiable, Hashable{
     let id:UUID
     let date: Date
     var name: String
+    var muscleGroup :[MuscleGroup]
     var entries: [WorkoutEntry]
-    init(id: UUID = UUID(), date: Date = Date(), name: String = "Workout", entries: [WorkoutEntry] = []) {
+    init(id: UUID = UUID(), date: Date = Date(), name: String = "Workout", entries: [WorkoutEntry] = [], muscleGroup: [MuscleGroup] = []) {
         self.id = id
         self.date = date
         self.name = name
         self.entries = entries
+        self.muscleGroup = muscleGroup
     }
 }

@@ -21,20 +21,16 @@ final class ExerciseStore: ObservableObject{
     @Published var exercises: [Exercise] = []
     
     func load() {
-        print("loading exercises...")
 
         guard let url = Bundle.main.url(forResource: "ExerciseLibrary", withExtension: "json") else {
             print("JSON NOT FOUND IN BUNDLE")
             return
         }
 
-        print("found json:", url)
-
         do {
             let data = try Data(contentsOf: url)
             let decoded = try JSONDecoder().decode([Exercise].self, from: data)
             exercises = decoded
-            print("decoded exercises:", decoded.count)
         } catch {
             print("decode error:", error)
         }

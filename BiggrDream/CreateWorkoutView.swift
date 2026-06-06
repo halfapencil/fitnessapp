@@ -53,29 +53,42 @@ extension MuscleGroup {
     }
 }
 struct CreateWorkoutView: View {
+
     @State private var generatedWorkout: Workout?
-    
+    @State private var showWorkout = false
+
     @StateObject private var store = ExerciseStore()
 
     @State private var selected = Set<MuscleGroup>()
 
     var body: some View {
-        VStack {
 
-            Text("Select Muscle Groups")
+        NavigationStack {
 
-            MuscleSelectionView(selected: $selected)
+            VStack {
 
-            Button("Generate Workout") {
-                generatedWorkout = WorkoutGenerator.generate(
-                    from: selected,
-                    library: store.exercises
-                )
+                Text("Select Muscle Groups")
+
+                MuscleSelectionView(selected: $selected)
+
+                Button("Generate Workout") {
+
+                    generatedWorkout = WorkoutGenerator.generate(
+                        from: selected,
+                        library: store.exercises
+                    )
+
+                    showWorkout = true
+                }
+
             }
+            .navigationDestination(isPresented: $showWorkout) {
 
-        }
-        .navigationDestination(item: $generatedWorkout) {
-            WorkoutDetailView(workout: $0)
+                if let workout = generatedWorkout {
+                    WorkoutDetailView(workout: workout)
+                }
+
+            }
         }
         .onAppear {
             store.load()

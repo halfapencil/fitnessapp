@@ -26,9 +26,9 @@ struct WorkoutsView: View {
                 }
             }
             .navigationTitle("Workouts")
-        }
-        .sheet(isPresented: $showCreate) {
-            CreateWorkoutView()
+            .navigationDestination(isPresented: $showCreate) {
+                CreateWorkoutView()
+            }
         }
     }
 }

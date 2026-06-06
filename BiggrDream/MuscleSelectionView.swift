@@ -1,3 +1,9 @@
+//  Displays muscle groups for user to choose from when generating a workout
+//  MuscleSelectionView.swift
+//  BiggrDream
+//
+//  Created by Tony Lin on 2026-06-02.
+//
 import SwiftUI
 
 struct MuscleSelectionView: View {
