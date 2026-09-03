@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-enum MuscleGroup: String,CaseIterable, Hashable{
+enum MuscleGroup: String,CaseIterable, Hashable, Codable{
     case chest,tricep,shoulders,back,bicep,legs,abs
 }
 extension MuscleGroup {
@@ -27,6 +27,7 @@ extension MuscleGroup {
             
         }
     }
+    // Larger muscle groups get hit first
     var priority:Int{
         switch self{
         case .chest: return 0

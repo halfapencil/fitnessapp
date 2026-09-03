@@ -244,7 +244,7 @@
     },
     {
         "id": 28,
-        "name": "Neutral Grip Pullup",
+        "name": "Neutral Grip Pull up",
         "primaryMuscle": "back",
         "secondaryMuscle": ["bicep"],
         "equipment": "bodyweight",
@@ -473,8 +473,80 @@
       "primaryMuscle": "legs",
       "secondaryMuscle": [],
       "equipment": "",
+      "category": ["cardio"],
+      "family": "cardio"
+    },
+    {
+      "id": 54,
+      "name": "Bent Over Row",
+      "primaryMuscle": "back",
+      "secondaryMuscle": ["upper_back","lats"],
+      "equipment": "barbell",
+      "category": ["hypertrophy","strength"],
+      "family": "bent_over_row"
+    },
+    {
+      "id": 55,
+      "name": "Preacher Curl (barbell)",
+      "primaryMuscle": "bicep",
+      "secondaryMuscle": [],
+      "equipment": "barbell",
+      "category": ["hypertrophy","strength"],
+      "family": "preacher_curl"
+    },
+    {
+      "id": 56,
+      "name": "Preacher Curl (Dumbbell)",
+      "primaryMuscle": "bicep",
+      "secondaryMuscle": [],
+      "equipment": "dumbbell",
+      "category": ["hypertrophy","strength"],
+      "family": "preacher_curl"
+    },
+    {
+      "id": 57,
+      "name": "Seated Bicep Curl",
+      "primaryMuscle": "bicep",
+      "secondaryMuscle": [],
+      "equipment": "dumbbell",
+      "category": ["hypertrophy","strength"],
+      "family": "bicep_curl"
+    },
+    {
+      "id": 58,
+      "name": "Waiter Curl",
+      "primaryMuscle": "Bicep",
+      "secondaryMuscle": [],
+      "equipment": "dumbbell",
+      "category": ["hypertrophy","strength"],
+      "family": "bicep_curl"
+    },
+    {
+      "id": 59,
+      "name": "Chin Up",
+      "primaryMuscle": "Bicep",
+      "secondaryMuscle": ["upper back","lats"],
+      "equipment": "bodyweight",
+      "category": ["hypertrophy","strength","calesthenic"],
+      "family": ""
+    },
+    {
+      "id": 60,
+      "name": "Front Lever",
+      "primaryMuscle": "abs",
+      "secondaryMuscle": ["forearm","shoulders"],
+      "equipment": "bodyweight",
+      "category": ["hypertrophy","strength","calesthenic"],
+      "family": ""
+    },
+    {
+      "id": 54,
+      "name": "",
+      "primaryMuscle": "",
+      "secondaryMuscle": [],
+      "equipment": "",
       "category": ["hypertrophy","strength"],
       "family": ""
-    }
+    },
     
 ]

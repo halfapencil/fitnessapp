@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0BDF4B30434C4700AABEB0 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BDF4A30434AE000AABEB0 /* HistoryView.swift */; };
+		EA0BDF4D30434C9800AABEB0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0BDF4C30434C8F00AABEB0 /* ProfileView.swift */; };
 		EA69797D2FCCB569009D3465 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69797C2FCCB548009D3465 /* Workout.swift */; };
 		EA69797F2FCCB56F009D3465 /* WorkoutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA69797E2FCCB56C009D3465 /* WorkoutEntry.swift */; };
 		EA6979892FCCD4CD009D3465 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6979882FCCD4CA009D3465 /* WorkoutsView.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA0BDF4A30434AE000AABEB0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		EA0BDF4C30434C8F00AABEB0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EA69797C2FCCB548009D3465 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		EA69797E2FCCB56C009D3465 /* WorkoutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
 		EA6979812FCCB709009D3465 /* ExerciseLibrary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExerciseLibrary.json; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				EA6979802FCCB701009D3465 /* JSON */,
 				EA69798E2FCCE1DD009D3465 /* Services */,
 				EA69798A2FCCD5AE009D3465 /* CreateWorkoutView.swift */,
+				EA0BDF4A30434AE000AABEB0 /* HistoryView.swift */,
+				EA0BDF4C30434C8F00AABEB0 /* ProfileView.swift */,
 				EA6979882FCCD4CA009D3465 /* WorkoutsView.swift */,
 				EA8A750A2FC7BF33008E7AE1 /* ContentView.swift */,
 				EA8A75192FCAC0D6008E7AE1 /* Models */,
@@ -205,6 +211,8 @@
 				EA69798D2FCCE13C009D3465 /* WorkoutSet.swift in Sources */,
 				EA6979912FCCEE8D009D3465 /* ExerciseStore.swift in Sources */,
 				EA76E77C2FCE251100FC9F9F /* CardioEntry.swift in Sources */,
+				EA0BDF4D30434C9800AABEB0 /* ProfileView.swift in Sources */,
+				EA0BDF4B30434C4700AABEB0 /* HistoryView.swift in Sources */,
 				EA6979892FCCD4CD009D3465 /* WorkoutsView.swift in Sources */,
 				EA8A75092FC7BF33008E7AE1 /* BiggrDreamApp.swift in Sources */,
 				EA69797D2FCCB569009D3465 /* Workout.swift in Sources */,

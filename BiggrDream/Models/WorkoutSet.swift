@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WorkoutSet: Identifiable, Hashable{
+struct WorkoutSet: Identifiable, Hashable, Codable{
     let id:UUID
     var reps: Int
     var weight: Double

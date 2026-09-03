@@ -5,7 +5,7 @@
 //  Created by Tony Lin on 2026-05-31.
 //
 import Foundation
-struct Workout:Identifiable, Hashable{
+struct Workout:Identifiable, Hashable, Codable{
     let id:UUID
     let date: Date
     var name: String
